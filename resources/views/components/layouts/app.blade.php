@@ -5,11 +5,15 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="{{ asset('logo.png') }}" type="image/x-icon" />
-
+    <link rel="stylesheet" href="{{ asset('css/tailwind.css') }}">
     <title>{{ $title ?? 'Page Title' }}</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.min.js"></script>
+    {{-- <script src="https://cdn.tailwindcss.com"></script> --}}
+    @vite(['resources/css/app.css', 'resources/js/app.js'])
+    {{-- <link href="{{ asset('css/tailwind.css') }}" rel="stylesheet"> --}}
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> --}}
+    {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.25/webcam.min.js"></script> --}}
+    <script src="{{ asset('js/webcam.js') }}"></script>
+    <script src="{{ asset('js/jquery.js') }}"></script>
 
     <!-- Jika menggunakan Vite -->
     @livewireStyles
@@ -68,18 +72,13 @@
                 0 4px 6px -2px rgba(0, 0, 0, 0.05);
         }
 
-        .grid {
+        /* .grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
             grid-auto-rows: auto;
-            /* Tinggi otomatis */
             align-items: start;
-            /* Card tidak memaksa tinggi sama */
             gap: 1.5rem;
-            /* rounded corners */
-
-
-        }
+        } */
     </style>
     @stack('styles')
 </head>

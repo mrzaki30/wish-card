@@ -1,5 +1,5 @@
 <div>
-    <div class="min-h-screen bg-gradient-to-b from-blue-100 to-white p-6 flex justify-center items-center">
+    <div class="min-h-screen bg-gradient-to-b from-blue-300 to-white p-6 flex justify-center items-center">
         <div class="max-w-xl w-full">
             <!-- Card with floating effect -->
             <div class="transform hover:-translate-y-1 transition-all duration-300">
@@ -61,9 +61,9 @@
                     <div class="p-6 space-y-6">
                         <!-- Message with improved styling -->
                         <div class="relative">
-                            <div class="absolute -top-6 left-4 transform -translate-y-1/2 text-3xl">💭</div>
+                            <div class="absolute -top-6 left-4 transform -translate-y-1/2 text-4xl">💭</div>
                             <div class="bg-gradient-to-br from-gray-50 to-gray-100 rounded-xl p-5 shadow-inner">
-                                <p class="text-gray-800 text-lg leading-relaxed whitespace-pre-line break-words"
+                                <p class="text-gray-800 text-xl leading-relaxed whitespace-pre-line break-words"
                                     style="margin-top: -30px;">
                                     {!! nl2br(e($wishes->message)) !!}
                                 </p>
@@ -74,15 +74,15 @@
                         <div class="flex justify-center space-x-6">
                             <div class="flex items-center space-x-2 transform hover:scale-110 transition-transform">
                                 <span class="text-2xl animate-bounce">❤️</span>
-                                <span class="text-sm font-medium text-gray-600">Harapan Tulus</span>
+                                <span class="text-lg font-medium text-gray-600">Harapan Tulus</span>
                             </div>
                             <div class="flex items-center space-x-2 transform hover:scale-110 transition-transform">
                                 <span class="text-2xl animate-pulse">⭐</span>
-                                <span class="text-sm font-medium text-gray-600">Inspirasi</span>
+                                <span class="text-lg font-medium text-gray-600">Inspirasi</span>
                             </div>
                             <div class="flex items-center space-x-2 transform hover:scale-110 transition-transform">
                                 <span class="text-2xl animate-spin-slow">💫</span>
-                                <span class="text-sm font-medium text-gray-600">Semangat</span>
+                                <span class="text-lg font-medium text-gray-600">Semangat</span>
                             </div>
                         </div>
                     </div>

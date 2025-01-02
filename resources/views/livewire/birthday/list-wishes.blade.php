@@ -1,5 +1,6 @@
 <div>
     {{-- The Master doesn't talk, he acts. --}}
+
     <div class="min-h-screen bg-gradient-to-b from-blue-100 to-white p-4">
         <div class="max-w-full mx-auto bg-white rounded-lg shadow-xl p-6">
             <!-- Header Section -->
@@ -110,5 +111,11 @@
                 </div>
             </div>
         </div>
+    </div>
+    <div class="p-6 bg-gray-50">
+        <a href="{{ route('birthday.index') }}"
+            class="block w-full text-center bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-3 rounded-xl font-medium shadow-md hover:shadow-lg transform transition-all duration-300 hover:-translate-y-0.5 focus:outline-none focus:ring-2 focus:ring-purple-500 focus:ring-offset-2">
+            Kembali
+        </a>
     </div>
 </div>

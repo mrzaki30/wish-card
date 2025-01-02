@@ -1,27 +1,24 @@
 <div>
     {{-- @if ($showWishes == false) --}}
-    <div class="min-h-screen bg-gradient-to-b from-blue-100 to-white p-6">
+    <div class="min-h-screen bg-gradient-to-b from-blue-300 to-white p-6">
         <div class="max-w-6xl mx-auto bg-white rounded-lg shadow-xl p-6">
             <!-- Header Section (sama seperti sebelumnya) -->
-            <div class="text-center mb-8">
+            <div class="text-center mb-8 flex flex-col items-center">
                 <h1 class="text-4xl font-bold text-blue-600 mb-2 animate-pulse">
                     Selamat Ulang Tahun Kabupaten Ogan Ilir
                 </h1>
-                <div
-                    class="text-6xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-500 to-pink-500 mb-4">
-                    {{ date('Y') }}
-                </div>
+                <img src="/hut.png" width="200">
             </div>
 
             <!-- Enhanced Form Section -->
             <div class="mb-8 relative">
                 <div
-                    class="absolute inset-0 bg-gradient-to-r from-pink-200 via-purple-200 to-blue-200 rounded-2xl transform rotate-1">
+                    class="absolute inset-0 bg-gradient-to-r from-pink-300 via-purple-300 to-blue-300 rounded-2xl transform rotate-1">
                 </div>
                 <div
-                    class="absolute inset-0 bg-gradient-to-l from-blue-200 via-purple-200 to-pink-200 rounded-2xl transform -rotate-1 opacity-75">
+                    class="absolute inset-0 bg-gradient-to-l from-blue-300 via-purple-300 to-pink-300 rounded-2xl transform -rotate-1 opacity-75">
                 </div>
-                <div class="relative bg-white p-8 rounded-2xl shadow-lg">
+                <div class="relative bg-white p-8 rounded-2xl shadow-2xl">
                     <h2
                         class="text-2xl font-bold mb-6 text-center bg-clip-text text-transparent bg-gradient-to-r from-purple-600 to-pink-600">
                         ✨ Ketik Ucapan dan Harapan Spesialmu ✨
