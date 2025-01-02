@@ -16,21 +16,21 @@
                 @foreach ($wishes as $index => $wish)
                     @php
                         $gradients = [
-                            'from-rose-100 via-pink-100 to-purple-100',
-                            'from-blue-100 via-indigo-100 to-purple-100',
-                            'from-emerald-100 via-teal-100 to-cyan-100',
-                            'from-amber-100 via-orange-100 to-rose-100',
-                            'from-violet-100 via-purple-100 to-fuchsia-100',
-                            'from-cyan-100 via-sky-100 to-blue-100',
+                            'from-rose-200 via-pink-200 to-purple-200',
+                            'from-blue-200 via-indigo-200 to-purple-200',
+                            'from-emerald-200 via-teal-200 to-cyan-200',
+                            'from-amber-200 via-orange-200 to-rose-200',
+                            'from-violet-200 via-purple-200 to-fuchsia-200',
+                            'from-cyan-200 via-sky-200 to-blue-200',
                         ];
 
                         $borders = [
-                            'border-rose-200',
-                            'border-blue-200',
-                            'border-emerald-200',
-                            'border-amber-200',
-                            'border-violet-200',
-                            'border-cyan-200',
+                            'border-rose-400',
+                            'border-blue-400',
+                            'border-emerald-400',
+                            'border-amber-400',
+                            'border-violet-400',
+                            'border-cyan-400',
                         ];
 
                         $currentIndex = $index % count($gradients);
@@ -38,9 +38,9 @@
 
                     <!-- Card -->
                     <a href="{{ route('wishes.show', $wish->id) }}"
-                        class="relative overflow-hidden rounded-2xl border-4 {{ $borders[$currentIndex] }} flex flex-col h-full transition-transform transform hover:scale-105 hover:border-opacity-50 duration-500 ease-in-out">
+                        class="relative overflow-hidden rounded-2xl border-4 {{ $borders[$currentIndex] }} flex flex-col h-full transition-transform transform hover:scale-105 hover:border-opacity-100 duration-500 ease-in-out">
                         <!-- Card Background -->
-                        <div class="absolute inset-0 bg-gradient-to-br {{ $gradients[$currentIndex] }} opacity-80">
+                        <div class="absolute inset-0 bg-gradient-to-br {{ $gradients[$currentIndex] }} opacity-100">
                         </div>
 
                         <!-- Card Content -->

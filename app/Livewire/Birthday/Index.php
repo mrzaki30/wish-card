@@ -77,7 +77,9 @@ class Index extends Component
                 }
             }
 
-            Wish::create([
+
+
+           $data =  Wish::create([
                 'name' => $this->name,
                 'message' => $this->message,
                 'photo_path' => $filePath,
@@ -87,7 +89,7 @@ class Index extends Component
             $this->showWishes = true;
             session()->flash('message', 'Ucapan berhasil ditambahkan!');
             // $this->emit('wishAdded');
-            return redirect('list-wish');
+            return redirect('show/' . $data->id);
 
 
     }
