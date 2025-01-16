@@ -24,6 +24,7 @@ class Index extends Component
         'name' => 'required|min:3',
         'message' => 'required|min:10',
         'photo' => 'nullable',
+
     ];
 
     protected $messages = [
@@ -119,6 +120,7 @@ class Index extends Component
     //         return redirect('wish.index');
     //     }
     // }
+
 
 
 

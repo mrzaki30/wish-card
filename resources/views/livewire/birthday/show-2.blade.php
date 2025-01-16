@@ -56,7 +56,7 @@
                                                 <path
                                                     d="M10 2a6 6 0 00-6 6v3.586l-.707.707A1 1 0 004 14h12a1 1 0 00.707-1.707L16 11.586V8a6 6 0 00-6-6zM10 18a3 3 0 01-3-3h6a3 3 0 01-3 3z" />
                                             </svg>
-                                            {{ $wishes->created_at->setTimezone('Asia/Jakarta')->locale('id')->isoFormat('D MMMM YYYY, HH:mm') }}
+                                            {{ $wishes->created_at->format('d M Y, H:i') }}
                                         </span>
                                     </p>
                                 </div>
@@ -89,11 +89,11 @@
                                 <span class="text-lg font-medium text-gray-600">Harapan Tulus</span>
                             </div>
                             <div class="flex items-center space-x-2 transform hover:scale-110 transition-transform">
-                                <span class="text-2xl  animate-pulse">⭐</span>
+                                <span class="text-2xl animate-pulse">⭐</span>
                                 <span class="text-lg font-medium text-gray-600">Inspirasi</span>
                             </div>
                             <div class="flex items-center space-x-2 transform hover:scale-110 transition-transform">
-                                <span class="text-2xl animate-spin-slow animate-spin">💫</span>
+                                <span class="text-2xl animate-spin-slow">💫</span>
                                 <span class="text-lg font-medium text-gray-600">Semangat</span>
                             </div>
                         </div>
